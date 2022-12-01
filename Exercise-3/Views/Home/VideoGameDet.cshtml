@@ -1,0 +1,16 @@
+﻿@model VideoGame
+
+@{
+    ViewData["Title"] = @Model.Title;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Title</h1>
+    <ul>
+        <li>Price: @Model.Price</li>
+        <li>Publisher: @Model.Publisher</li>
+        <li>Category: @Model.Category</li>
+        <li>Year: @Model.Year</li>
+        <li>Age: @Model.AgeRating</li>
+    </ul>
+</div>

@@ -1,0 +1,14 @@
+﻿@model HashSet<VideoGame>
+@{
+    ViewData["Title"] = "Video Games";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Video Games</h1>
+    
+    @foreach(var videoGame in Model)
+    {
+        <a class="nav-link text-dark" asp-area="VideoGameDet" asp-controller="Home" asp-action="VideoGame">@videoGame.Title</a>
+    }
+    
+</div>
